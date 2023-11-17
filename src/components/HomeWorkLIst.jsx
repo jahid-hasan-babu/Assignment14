@@ -10,7 +10,7 @@ const HomeWorkLIst = () => {
         (
             async () => {
                 try {
-                  const response = await fetch('../../public/database/data.json'); 
+                  const response = await fetch('public/database/data.json'); 
                   const data = await response.json();
                   setJsonData(data.work);
                 } catch (error) {
