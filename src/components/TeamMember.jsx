@@ -9,7 +9,7 @@ const TeamMember = () => {
         (
             async () => {
                 try {
-                  const response = await fetch('database/data.json'); 
+                  const response = await fetch('/database/data.json'); 
                   const data = await response.json();
                   setJsonData(data.team);
                 } catch (error) {
