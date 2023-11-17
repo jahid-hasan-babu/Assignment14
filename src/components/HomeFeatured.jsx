@@ -9,7 +9,7 @@ const HomeFeatured = () => {
         (
             async () => {
                 try {
-                  const response = await fetch('public/database/data.json'); 
+                  const response = await fetch('database/data.json'); 
                   const data = await response.json();
                   setJsonData(data.featured_cart);
                 } catch (error) {
@@ -22,7 +22,7 @@ const HomeFeatured = () => {
         (
             async () => {
                 try {
-                  const response = await fetch('public/database/data.json'); 
+                  const response = await fetch('database/data.json'); 
                   const data = await response.json();
                   setData(data.featured);
                 } catch (error) {
